@@ -1,0 +1,121 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+html
+{
+     font-size: 10px;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+/* common styles*/
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.description
+{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title 
+{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+/* layouts*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5grem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+}
+@media only screen and (max-width: 768px){
+    .container 
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+
+    }
+}
+.Profile 
+{
+    grid-column: 1 /-1;
+    margin-bottom: 2rem;
+}
+.group-1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+/* Profile */
+.Profile_Container
+{
+    display: flex;
+    gap: 2rem;
+}
+.Profile_ProfileIMG
+{
+    max-width: 250px;
+}
+.Profile_Name_first_Name
+{
+    color: white;
+    font-weight: 200;
+    forn-size: clamp(2rem, 8vw,4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.Profile_Name_Last_Name
+{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw,7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.Profile_title
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px)
+{
+    .Profile_Container
+    {
+        flex-direction: column;
+    }
+}
+/* Expertise */
+.Skill_List
+{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
